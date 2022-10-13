@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css bs -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <h3>Bài 1: Tính lương</h3>
+        <div class="w-50">
+            <form>
+                <div class="form-group">
+                    <label for="">Nhập vào số ngày làm</label>
+                    <input type="text" class="form-control" id="numbervd1">
+                </div>
+            </form>
+            <button onclick="tinhLuong()" id="btnLuong" class="btn btn-success">Tính</button>
+                <div class="mt-2 alert alert-success">
+                    Lương nhận được là: <span id="Luong"></span>
+                </div>
+        </div>   
+
+    <h3>Bài 2: Tính</h3>
+        <div class="w-50">
+            <form>
+                    <div class="form-group">
+                        <label for="">Nhập số thứ 1:</label>
+                        <input type="text" class="form-control" id="number1">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Nhập số thứ 2:</label>
+                        <input type="text" class="form-control" id="number2">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Nhập số thứ 3:</label>
+                        <input type="text" class="form-control" id="number3">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Nhập số thứ 4:</label>
+                        <input type="text" class="form-control" id="number4">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Nhập số thứ 5:</label>
+                        <input type="text" class="form-control" id="number5">
+                    </div>
+            </form>
+            <button onclick="tinhTrungBinh()" id="btnTrungBinh" class="btn btn-success">Tính</button>
+                <div class="mt-2 alert alert-success">
+                    Giá trị trung bình là: <span id="TrungBinh"></span>
+                </div>
+        </div>
+
+    <h3>Bài 3: Quy đổi tiền</h3>
+        <div class="w-50">
+            <form action="">
+                <div class="form-group">
+                    <label for="soTien">Nhập số tiền (USD):</label>
+                    <input type="text" class="form-control" name="" id="soTien" placeholder="USD">
+                </div>
+            </form>
+        <button onclick="tienQuyDoi()" id="btnTinhTien" class="btn btn-success">Quy Đổi</button>
+            <div class="mt-2 alert alert-success">
+                Số tiền Vnd quy được ra là: <span id="tinhTien"></span>
+            </div>
+        </div>
+
+    <h3>Bài 4: Tính chu vi, diện tích hình chữ nhật</h3>
+        <div class="w-50">
+            <form action="">
+                <div class="form-group">
+                    <label for="">Nhập chiều dài hcn:</label>
+                    <input type="text" class="form-control" name="" id="chieuDai">
+                </div>
+                <div class="form-group">
+                    <label for="">Nhập chiều rộng hcn:</label>
+                    <input type="text" class="form-control" name="" id="chieuRong">
+                </div>
+            </form>
+        <button onclick="tinhCVDT()" id="btnTinh" class="btn btn-success">Tính</button>
+            <div class="mt-2 alert alert-success">
+                Chu vi hình chữ nhật là: <span id="chuVi"></span>;
+                Diện tích hình chữ nhật là: <span id="dienTich"></span>
+            </div>
+        </div>
+
+    <h3>Bài 5: Tính tổng</h3>
+        <div class="w-50">
+            <form action="">
+                <div class="form-group">
+                    <label for="">Nhập số có hai chữ số:</label>
+                    <input type="text" class="form-control" name="" id="num" >
+                </div>
+            </form>
+        <button onclick="tinhTong()" id="btnTinhTong" class="btn btn-success">Tính</button>
+            <div class="mt-2 alert alert-success">
+                Tổng hai số hàng chục và đơn vị là: <span id="tinhTong"></span>
+            </div>
+        </div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+
+<script src="./js/vd1.js"></script>
+<script src="./js/vd2.js"></script>
+<script src="./js/vd3.js"></script>
+<script src="./js/vd4.js"></script>
+<script src="./js/vd5.js"></script>
+</body>
+
+</html>
